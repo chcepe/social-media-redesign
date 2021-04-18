@@ -5,6 +5,7 @@
       "@components/*": ["components/*"],
       "@containers/*": ["containers/*"],
       "@utils/*": ["utils/*"],
+      "@assets/*": ["assets/*"],
       "@lib/*": ["lib/*"]
     },
     "allowJs": true,
