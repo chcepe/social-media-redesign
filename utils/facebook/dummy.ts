@@ -7,7 +7,7 @@ import {
   User,
 } from "./types";
 
-export const USER: User = {
+export const CURRENT_USER: User = {
   id: "me",
   name: "Jane Doe",
   avatar: "https://i.pravatar.cc/50?img=me",

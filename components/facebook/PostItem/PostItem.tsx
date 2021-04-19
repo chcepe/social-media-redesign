@@ -2,8 +2,8 @@ import React, { FC } from "react";
 
 import * as Icons from "@assets/facebook/icons";
 import * as T from "@utils/facebook/types";
-import { ACTIONS } from "@utils/facebook/constants";
 
+import { ACTIONS } from "./constants";
 import * as S from "./styles";
 
 const PostItem: FC<T.PostItem> = ({ from, message, type, src, date }) => (

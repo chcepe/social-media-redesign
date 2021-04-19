@@ -1,21 +1,18 @@
 import React, { FC } from "react";
 
 import * as Icons from "@assets/instagram-igtv/icons";
-import { Category, CategoryType } from "@utils/instagram-igtv/types";
+import { CategoryType } from "@utils/instagram-igtv/types";
 
+import { CATEGORIES } from "./constants";
 import * as S from "./styles";
 
-interface Props {
-  categories: Category[];
-}
-
-const CategoriesNav: FC<Props> = ({ categories }) => {
+const CategoriesNav: FC = () => {
   const activeCategoryId: CategoryType = "for-you";
 
   return (
     <S.Wrapper>
       <S.CategoryList>
-        {categories.map(({ id, label }) => (
+        {CATEGORIES.map(({ id, label }) => (
           <S.CategoryItem active={id === activeCategoryId} key={id}>
             {label}
           </S.CategoryItem>

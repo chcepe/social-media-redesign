@@ -32,7 +32,7 @@ export const Content = styled.div`
 
 export const FeedItem = styled.div`
   width: 100%;
-  height: 400px;
+  aspect-ratio: 9 / 16;
   position: relative;
   overflow: hidden;
   border-radius: 5px;

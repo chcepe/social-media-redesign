@@ -24,12 +24,15 @@ export interface Category {
   label: string;
 }
 
+export interface User {
+  username: string;
+  verified?: boolean;
+  avatar: string;
+}
+
 export interface Post {
   id: string;
-  from: {
-    username: string;
-    verified?: boolean;
-  };
+  from: User;
   title: string;
   length: string;
   thumb: string;

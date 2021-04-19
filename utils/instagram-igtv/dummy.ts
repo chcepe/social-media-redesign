@@ -1,61 +1,10 @@
-import {
-  Explore,
-  Home,
-  IGTV,
-  Likes,
-  Search,
-} from "@assets/instagram-igtv/icons";
-import { Category, NavLink, Post } from "@utils/instagram-igtv/types";
+import { Post, User } from "@utils/instagram-igtv/types";
 
-export const NAVIGATION_LINKS: NavLink[] = [
-  {
-    id: "home",
-    icon: Home,
-  },
-  {
-    id: "search",
-    icon: Search,
-  },
-  {
-    id: "ig-tv",
-    icon: IGTV,
-  },
-  {
-    id: "explore",
-    icon: Explore,
-  },
-  {
-    id: "likes",
-    icon: Likes,
-  },
-];
-
-export const CATEGORIES: Category[] = [
-  {
-    id: "for-you",
-    label: "For you",
-  },
-  {
-    id: "following",
-    label: "Following",
-  },
-  {
-    id: "popular",
-    label: "Popular",
-  },
-  {
-    id: "featured",
-    label: "Featured",
-  },
-  {
-    id: "live",
-    label: "Live",
-  },
-  {
-    id: "watch-later",
-    label: "Watch later",
-  },
-];
+export const CURRENT_USER: User = {
+  username: "janedoe",
+  avatar: "https://i.pravatar.cc/50?img=me",
+  verified: true,
+};
 
 export const POSTS: Post[] = [
   {
@@ -63,6 +12,7 @@ export const POSTS: Post[] = [
     from: {
       username: "guerra",
       verified: false,
+      avatar: "https://i.pravatar.cc/50?img=guerra",
     },
     recommended: true,
     title: "aliqua ea",
@@ -74,6 +24,7 @@ export const POSTS: Post[] = [
     from: {
       username: "janie",
       verified: true,
+      avatar: "https://i.pravatar.cc/50?img=janie",
     },
     recommended: true,
     title: "anim velit",
@@ -85,6 +36,7 @@ export const POSTS: Post[] = [
     from: {
       username: "meyer",
       verified: true,
+      avatar: "https://i.pravatar.cc/50?img=meyer",
     },
     recommended: false,
     title: "quis in",
@@ -96,6 +48,7 @@ export const POSTS: Post[] = [
     from: {
       username: "cobb",
       verified: false,
+      avatar: "https://i.pravatar.cc/50?img=cobb",
     },
     recommended: false,
     title: "nisi do",
@@ -107,6 +60,7 @@ export const POSTS: Post[] = [
     from: {
       username: "zimmerman",
       verified: false,
+      avatar: "https://i.pravatar.cc/50?img=zimmerman",
     },
     recommended: false,
     title: "proident exercitation",
@@ -118,6 +72,7 @@ export const POSTS: Post[] = [
     from: {
       username: "ware",
       verified: true,
+      avatar: "https://i.pravatar.cc/50?img=ware",
     },
     recommended: false,
     title: "nisi commodo",
@@ -129,6 +84,7 @@ export const POSTS: Post[] = [
     from: {
       username: "rosella",
       verified: true,
+      avatar: "https://i.pravatar.cc/50?img=rosella",
     },
     recommended: false,
     title: "irure deserunt",
@@ -140,6 +96,7 @@ export const POSTS: Post[] = [
     from: {
       username: "shaffer",
       verified: true,
+      avatar: "https://i.pravatar.cc/50?img=shaffer",
     },
     recommended: false,
     title: "elit ut",
@@ -151,6 +108,7 @@ export const POSTS: Post[] = [
     from: {
       username: "adele",
       verified: false,
+      avatar: "https://i.pravatar.cc/50?img=adele",
     },
     recommended: false,
     title: "nostrud reprehenderit",
@@ -162,6 +120,7 @@ export const POSTS: Post[] = [
     from: {
       username: "clare",
       verified: true,
+      avatar: "https://i.pravatar.cc/50?img=clare",
     },
     recommended: false,
     title: "fugiat laborum",
@@ -173,6 +132,7 @@ export const POSTS: Post[] = [
     from: {
       username: "elvia",
       verified: false,
+      avatar: "https://i.pravatar.cc/50?img=elvia",
     },
     recommended: false,
     title: "consectetur amet",
@@ -184,6 +144,7 @@ export const POSTS: Post[] = [
     from: {
       username: "willis",
       verified: true,
+      avatar: "https://i.pravatar.cc/50?img=willis",
     },
     recommended: false,
     title: "et exercitation",
@@ -195,6 +156,7 @@ export const POSTS: Post[] = [
     from: {
       username: "hale",
       verified: false,
+      avatar: "https://i.pravatar.cc/50?img=hale",
     },
     recommended: false,
     title: "sint non",
@@ -206,6 +168,7 @@ export const POSTS: Post[] = [
     from: {
       username: "berg",
       verified: true,
+      avatar: "https://i.pravatar.cc/50?img=berg",
     },
     recommended: false,
     title: "ad ut",
@@ -217,6 +180,7 @@ export const POSTS: Post[] = [
     from: {
       username: "gabrielle",
       verified: true,
+      avatar: "https://i.pravatar.cc/50?img=gabrielle",
     },
     recommended: false,
     title: "ut excepteur",

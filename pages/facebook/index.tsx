@@ -15,7 +15,7 @@ import {
   STORIES,
   POSTS_ITEMS,
   EVENT_ITEMS,
-  USER,
+  CURRENT_USER,
   ADD_STORY_BG,
 } from "@utils/facebook/dummy";
 
@@ -30,13 +30,13 @@ const FacebookPage: FC = () => (
       <Header />
       <S.Home>
         <S.Column>
-          <UserCard img={USER.avatar} name={USER.name} />
+          <UserCard img={CURRENT_USER.avatar} name={CURRENT_USER.name} />
           <ChatList users={CHAT_USERS} />
           <ActivityLogList items={ACTIVITY_LOG_ITEMS} />
         </S.Column>
         <S.Column>
           <Stories addBG={ADD_STORY_BG} items={STORIES} />
-          <CreatePost {...USER} />
+          <CreatePost {...CURRENT_USER} />
           <Feed items={POSTS_ITEMS} />
         </S.Column>
         <S.Column>
