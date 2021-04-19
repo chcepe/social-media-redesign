@@ -12,6 +12,8 @@ export const GlobalStyle = createGlobalStyle`
 
     * {
       box-sizing: border-box;
+      transition: all 0.2s ease;
+      transition-property: background, opacity;
     }
 
     input:focus,
@@ -29,3 +31,7 @@ export const Wrapper = styled.div`
   height: 100vh;
   grid-gap: 20px;
 `;
+
+export default () => {
+  return "";
+};

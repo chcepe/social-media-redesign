@@ -26,6 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     * {
       box-sizing: border-box;
       transition: all 0.2s ease;
+      transition-property: background, opacity;
     }
 
     input:focus,
@@ -55,3 +56,7 @@ export const Home = styled(Container)`
 export const Column = styled.div`
   overflow: hidden;
 `;
+
+export default () => {
+  return "";
+};
